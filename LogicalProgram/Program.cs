@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Logical Programs");
-            Console.WriteLine("Select the Program\n1.Fibonacci Series\n2.PerfectNumber");
+            Console.WriteLine("Select the Program\n1.Fibonacci Series\n2.PerfectNumber\n3.PrimeNumber");
             Console.WriteLine("Choose option");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
@@ -15,6 +15,9 @@
                     break;
                 case 2:
                     LogicalSolutions.FindPerfectNumber();
+                    break;
+                case 3:
+                    LogicalSolutions.PrimeNumber();
                     break;
             }
         }

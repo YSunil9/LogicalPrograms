@@ -45,5 +45,23 @@ namespace LogicalProgram
                 Console.WriteLine(input + " is not a perfect number");
             }
         }
+        //checkPrimeNumbers
+        public static void PrimeNumber()
+        {
+            int count = 0;
+            Console.WriteLine("Enter the Number : ");
+            int number = Convert.ToInt32(Console.ReadLine());           
+            for (int i = 2; i < number; i++)
+            {
+                if (number % i == 0)
+                {
+                    count++;
+                }
+            }
+            if (count == 0)
+                Console.WriteLine(number + " is prime Number");
+            else
+                Console.WriteLine(number + " is not a Prime Number!");
+        }
     }
 }
